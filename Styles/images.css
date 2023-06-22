@@ -1,0 +1,79 @@
+
+.baller-inline {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 568px) {
+    .baller-inline  {
+        width: calc(35px + 36 * ((100vw - 568px) / 456));
+        height: calc(35px + 36 * ((100vw - 568px) / 456));
+        border-radius: calc(10px + 10 * ((100vw - 568px) / 456));
+    }
+}
+@media screen and (min-width: 1024px) {
+    .baller-inline  {
+        width: 71px;
+        height: 71px;
+        border-radius: 20px;
+    }
+}
+.carousel-NSW-img {
+    margin: 10px;
+}
+
+.carousel-NSW-img > img {
+    border-radius: 20px;
+}
+
+.ballers-howToPlay-phoneOne {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.ballers-howToPlay-phoneTwo {
+    position: relative;
+    width: 47%;
+    height: auto;
+    right: 7.5%;
+    z-index: -1;
+}
+
+.background-colored {
+    background-image: url("../BG-Blur.png");
+    background-origin: border-box;
+    overflow: hidden;
+    background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .background-colored {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.baller-stripe {
+    width: auto;
+    height: 128px;
+    overflow: hidden;
+    margin-bottom: -5px;
+}
+
+.baller-footer-trio {
+    margin-bottom: 50px;
+}
+
+.ballers-footer-banner {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.ballers-link-image {
+    display: inline-block;
+    vertical-align: text-bottom;
+}

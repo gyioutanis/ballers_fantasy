@@ -1,0 +1,17 @@
+.button-mint {
+    border-radius: 22px;
+    background-color: rgba(33,213,139, 1);
+    text-align: center;
+    padding-top: 19px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    line-height: normal;
+}
+
+@media screen and (min-width:768px){
+    .button-mint {
+        width: 380px;
+        height: 110px;
+    }
+}

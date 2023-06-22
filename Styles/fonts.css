@@ -1,0 +1,160 @@
+
+
+@font-face {
+    font-family: "Agrandir-GrandHeavy";
+    src: url("../Fonts/Agrandir-GrandHeavy.otf");
+}
+
+@font-face {
+    font-family: "SFProText";
+    src: url("../Fonts/SF-Pro-Text-Regular.otf");
+}
+
+@font-face {
+    font-family: "SFProText-Bold";
+    src: url("../Fonts/SF-Pro-Text-Bold.otf");
+}
+
+@font-face {
+    font-family: "SFProText-Medium";
+    src: url("../Fonts/SF-Pro-Text-Medium.otf");
+}
+
+/*main styles*/
+h1 {
+    font-family: "Agrandir-GrandHeavy", sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 81px;
+}
+
+@media screen and (min-width: 568px) {
+    h1 {
+        font-size: calc(27px + 27 * ((100vw - 568px) / 456));
+    }
+}
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 54px;
+    }
+}
+
+h2 {
+    font-family: "Agrandir-GrandHeavy", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 81px;
+}
+
+h3 {
+    font-family: "SFProText-Bold",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+h4 {
+    font-family: "SFProText-Medium", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+h5 {
+    font-family: "SFProText-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-family: "SFProText-Medium", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 24px;
+}
+
+.ballers-link, .ballers-footer-signature, .button-mint {
+    font-family: "SFProText", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 30px;
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+
+@media screen and (min-width: 468px) {
+    .ballers-link, .ballers-footer-signature {
+        font-size: 17px;
+    }
+}
+
+/*customized classes*/
+.ballers-header-name {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.ballers-button-headline {
+    font-size: 34px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+}
+
+.ballers-small-text-centered {
+    font-size: 15px;
+    text-align: center;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.ballers-small-text-centered-white {
+    font-size: 15px;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    line-height: normal;
+    margin: 0;
+}
+
+.ballers-small-text-bold p  {
+    font-family: "SFProText-Bold", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ballers-description-big {
+    font-size: 24px;
+    line-height: normal;
+}
+
+.faq-button-font {
+    font-family: "SFProText-Medium", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+}

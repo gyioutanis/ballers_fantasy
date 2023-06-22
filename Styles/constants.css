@@ -1,0 +1,10 @@
+/* Width and height are matched to borders and not content-box of elements.*/
+* {
+    box-sizing: border-box;
+}
+/*body and html are set to cover the whole view.*/
+body, html {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

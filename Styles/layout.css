@@ -1,0 +1,372 @@
+/* Breakpoints
+    --mobile-port: 320px;
+    --mobile-land: 568px;
+    --tablet-port: 768px;
+    --tablet-land: 1024px;
+    --laptop: 1366px;
+    --desktop: 1680px;
+ */
+
+
+/* General classes */
+.centered {
+    text-align: center;
+    margin: auto;
+}
+
+.left {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.right {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.flex-centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.responsive {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 1024px) {
+    .responsive {
+        flex-flow: row nowrap;
+        align-content: center;
+    }
+}
+
+.responsive-tablet-port {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .responsive-tablet-port {
+        flex-flow: row nowrap;
+        align-content: center;
+    }
+}
+
+/* header layout */
+.header-main-container {
+    width: 100%;
+    padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-main-container {
+        padding: 35px;
+    }
+}
+
+.header-content-container {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .header-content-container {
+        width: 50%;
+    }
+}
+
+.header-inner-content-left {
+    text-align: left;
+    flex-flow: row nowrap;
+}
+
+.header-inner-content-left a {
+    max-width: 54px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-inner-content-right {
+    display: flex;
+    flex-flow: row nowrap;
+}
+@media screen and (max-width: 768px) {
+    .header-inner-content-right > .ballers-link {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-inner-content-right {
+        justify-content: flex-end;
+    }
+}
+
+.header-inner-content-right img {
+    max-width: 54px;
+    height: auto;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-inner-content-right img {
+        max-width: 34px;
+    }
+}
+
+.header-inner-content-right a {
+    line-height: 81px;
+    margin-right: 20px;
+}
+
+/* Main layout */
+
+.main-text-container {
+    width: 100%;
+    margin: 0 15px 80px 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-text-container {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.ballers-count-main-container {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .ballers-count-main-container {
+        width: 70%;
+    }
+}
+
+.ballers-count-numbers-container {
+    margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .ballers-count-numbers-container {
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+}
+
+.ballers-count-container {
+    max-width: 140px;
+    height: 110px;
+    align-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+.ballers-count-container > p {
+    height: 50%;
+    line-height: normal;
+}
+.ballers-count-container:nth-child(2) {
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.ballers-count-container h3 {
+    margin: 0;
+}
+
+.ballers-team-line-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ballers-team-line {
+    overflow: hidden;
+}
+
+.ballers-about-headline {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.ballers-about-description {
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .ballers-about-column-text {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+.ballers-about-column-text:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+}
+.ballers-about-column-text > h2,p {
+    margin: 0;
+}
+
+.baller-stripes-container {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.ballers-howToPlay-container {
+    width: 100%;
+}
+
+.ballers-howToPlay-text-container {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .ballers-howToPlay-text-container {
+        width: 75%;
+        margin: 0 60px 0 0;
+    }
+}
+
+.ballers-howToPlay-headline {
+    margin: 0 0 60px 0;
+}
+
+.ballers-howToPlay-description {
+    margin: 0 0 50px 0;
+}
+
+.ballers-howToPlay-text {
+    margin: 0 0 30px 0;
+}
+
+.ballers-howToPlay-images {
+    position: relative;
+    width: 50%;
+}
+
+.ballers-special-container {
+    background-color: rgba(226, 255, 204, 1);
+    padding: 40px 80px;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .ballers-special-container {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.ballers-special-text-container {
+    line-height: 50%;
+    margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .ballers-special-text-container {
+        margin-bottom: 0;
+        margin-right: 35px;
+    }
+}
+
+.ballers-special-headline {
+    margin: 0 0 15px 0;
+    line-height: normal;
+}
+
+.ballers-worldGroups-container {
+    flex-wrap: wrap;
+}
+
+.ballers-worldGroups-group {
+    margin: 10px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.ballers-worldGroups-headline {
+    margin: 0 0 5px 0;
+}
+
+.ballers-worldGroups-group-inner > img {
+    display: inline-block;
+}
+
+.faq-collaps {
+    border-top: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-left: none;
+    border-right: none;
+    padding: 25px 0;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    cursor: pointer;
+
+}
+
+.active, .faq-collaps:hover {
+    border-bottom: none;
+}
+
+.active2, .faq-collaps-cont {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.faq-collaps-cont {
+    display: none;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.faq-collaps:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    text-align: right;
+    font-size: 13px;
+    color: white;
+    float: right;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.ballers-footer-nav-container {
+    padding-top: 50px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.ballers-footer-nav > a {
+    margin: 0 10px;
+}
+
+.ballers-footer-signature-container {
+    margin-bottom: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+    .ballers-footer-signature-container {
+        margin-bottom: 0;
+    }
+}
